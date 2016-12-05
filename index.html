@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>时间选择</title>
+		<link rel="stylesheet" type="text/css" href="./bower_components/jedate/skin/jedate.css" />
+		<style type="text/css">
+			input[type=text] {
+				height: 30px;
+				width: 180px;
+			}
+		</style>
+	</head>
+
+	<body>
+		时间：<input type="text" ng-model="user.bir" id="bir" date-picker skin-cell="jedategreen" format="YYYY年MM月DD日 hh:mm:ss" /> {{user.bir}}
+
+		<script type="text/javascript" src="./bower_components/jedate/jquery-1.7.2.js"></script>
+		<script type="text/javascript" src="./bower_components/jedate/jquery.jedate.js"></script>
+		<script src="bower_components/angular/angular.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./datePicker.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var app = angular.module('app', ['datepicker']);
+		</script>
+
+	</body>
+
+</html>
